@@ -11,3 +11,11 @@
     height: auto;
     width: 95%;
 }
+
+.btn-primary {
+    background-color: skyblue;
+}
+
+.skyblue {
+    color: skyblue;
+}
