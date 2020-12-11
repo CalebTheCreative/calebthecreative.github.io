@@ -19,3 +19,20 @@
 .skyblue {
     color: skyblue;
 }
+
+#headerName1 {
+    font-weight: bold;
+}
+
+#headerName2 {
+    color: skyblue;
+}
+
+#headerCityPhoneEmail {
+    color: skyblue;
+}
+
+.sectionTitle {
+    font-weight: bold;
+    color: skyblue;
+}
