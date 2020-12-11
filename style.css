@@ -1,0 +1,13 @@
+.navbar {
+    min-height: 80px;
+    text-align: center;
+}
+
+.navbar-brand {
+    line-height: 80px;
+}
+
+.proj {
+    height: auto;
+    width: 95%;
+}
