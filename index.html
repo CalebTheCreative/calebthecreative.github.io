@@ -9,93 +9,199 @@
 </head>
 
 <body id="page-top">
+    <!-- Header -->
+    <header class="ch-header container">
+        <img src="images/logos/CH-logo-horizontal.png" id="ch-header-logo">
+        <img id="computer-bg" src="images/background/Computer-BG.jpg">
+        <div id="ch-bg-overlay"></div>
+        <div id="ch-header-content">
+            <!-- Top line of header content -->
+            <h1 class="text-light text-center" id="ch-header-1"><span class="makeBlue">Hey there</span>, I'm Caleb.</h1>
+            <!-- Second line -->
+            <h3 class="makeBlue-text text-center" id="ch-header-2">I'm a full-stack web developer from San Antonio, TX.
+                </h2>
+                <!-- Third line  -->
+                <p class="makeBlue-text text-center" id="header-text">If you have any questions, feel free to contact me
+                    by <a id="ch-header-email" href="mailto: calebhopkins@outlook.com">e-mail</a> or <a
+                        id="ch-header-tel" href="tel:210-823-0745">call me</a>.</p>
+                <div class="d-none d-lg-flex justify-content-center">
+                    <div class='icon-scroll'></div>
+                    <!-- <p id="ls-icon-animated" class="fa"></p> -->
+                </div>
+                <div class="d-flex justify-content-center">
+                    <!-- Github Icon -->
+                    <a href="https://github.com/CalebTheCreative" class="mx-2" target="_blank" alt="Github icon"><i
+                            class="fab fa-github-square fa-3x skyblue"></i></a>
+                    <!-- LinkedIn Icon -->
+                    <a href="https://www.linkedin.com/in/calebthecreative/" class="mx-2" target="_blank"
+                        alt="LinkedIn icon"><i class="fab fa-linkedin fa-3x skyblue"></i></a>
+                </div>
+        </div>
+    </header>
 
-    <!-- Nav Bar -->
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <div class="col-md-7">
-                    <a class="navbar-brand" href="#">
-                        <img src="images/CH Logo Blue.png" alt="" width="40" height="20">
-                        Caleb Hopkins
+    <!-- Portfolio Section -->
+    <section class="ch-section" id="ch-portfolio">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <h1 class="mb-4">FEATURED PROJECTS</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+
+                <div class="col-12 card mb-3 col-xl-3 mx-3">
+                    <img src="images/portfolio/si-screenshot.png" class="card-img-top mt-2" alt="Code Quiz">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Stay In App</h5>
+                        <div>
+                            <a href="https://stayingin.herokuapp.com/" class="mx-2" target="_blank" alt="Github icon">
+                                <button class="btn-primary btn">Live Demo</button>
+                            </a>
+                            <a href="https://github.com/CalebTheCreative/Project-2" class="mx-2" target="_blank"
+                                alt="LinkedIn icon">
+                                <button class="btn-primary btn">Github Repo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 card mb-3 col-xl-3 mx-3">
+                    <img src="images/portfolio/wdb-screenshot.png" class="card-img-top mt-2" alt="Code Quiz">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Weather Dashboard</h5>
+                        <div>
+                            <a href="https://calebthecreative.github.io/WeatherApp/" class="mx-2" target="_blank"
+                                alt="Github icon">
+                                <button class="btn-primary btn">Live Demo</button>
+                            </a>
+                            <a href="https://github.com/CalebTheCreative/WeatherApp" class="mx-2" target="_blank"
+                                alt="LinkedIn icon">
+                                <button class="btn-primary btn">Github Repo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 card mb-3 col-xl-3 mx-3">
+                    <img src="images/portfolio/cq-screenshot.png" class="card-img-top mt-2" alt="Code Quiz">
+                    <div class="card-body">
+                        <h5 class="card-title text-dark">Code Quiz</h5>
+                        <div>
+                            <a href="https://calebthecreative.github.io/Code-Quiz/" class="mx-2" target="_blank"
+                                alt="Github icon">
+                                <button class="btn-primary btn">Live Demo</button>
+                            </a>
+                            <a href="https://github.com/CalebTheCreative/Code-Quiz" class="mx-2" target="_blank"
+                                alt="LinkedIn icon">
+                                <button class="btn-primary btn">Github Repo</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="ch-resume col-12">
+        <img id="ch-resume-bg" src="images/background/ch-resume-bg.png" />
+        <div id="resume-content">
+            <h1 class="mb-2 text-center text-light">RESUME</h1>
+            <div class="text-center">
+                <form method="get" action="docs/CH-Resume.pdf" target="_blank">
+                    <button type="submit" class="btn submitBtn">Download Resume Here!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="ch-section" id="ch-contact">
+        <div class="container-fluid">
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <h1 class="mb-4">CONTACT ME</h1>
+                </div>
+            </div>
+            <div class="row justify-content-center text-center">
+
+                <div class="col-12 col-xl-4 mx-3" id="formCol">
+                    <h3 class="text-center">SEND ME A MESSAGE</h3>
+                    <!-- Contact Form -->
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
+                        action="https://formspree.io/f/mvovalyy" method="post">
+
+                        <fieldset id="fs-frm-inputs">
+                            <input class="ch-form form-control h-75 my-2" type="text" name="name" id="full-name"
+                                placeholder="Full Name" required="">
+                            <input class="ch-form form-control h-75 my-2" type="email" name="_replyto"
+                                id="email-address" placeholder="Email Address" required="">
+                            <textarea class="ch-form form-control h-75 my-2" rows="5" name="message" id="message"
+                                placeholder="Your Message" required=""></textarea>
+                            <input class="ch-form form-control h-75 my-2" type="hidden" name="_subject"
+                                id="email-subject" value="Contact Form Submission">
+                        </fieldset>
+                        <input type="submit" class="btn btn-lg submitBtn" value="Submit">
+
+                    </form>
+
+                </div><!-- end #formCol -->
+
+                <div class="col-12 col-xl-4 mx-3" id="linksCol">
+                    <a href="tel:+12108230745">
+                        <button class="btn btn-lg contact-btn justify-content-center align-items-center mt-5 mb-4">
+                            <i class="fas fa-phone text-left shadow-none"></i>
+                            +1 2108230745
+                        </button>
+                    </a><br />
+                    <a href="mailto: calebhopkins@outlook.com">
+                        <button class="btn btn-lg contact-btn align-items-center">
+                            <i class="fas fa-envelope text-left shadow-none"></i>
+                            calebhopkins@outlook.com
+                        </button>
                     </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-md-5 float-left" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#page-top">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">EXPERIENCE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#education">EDUCATION</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+                </div><!-- end #linksCol -->
+
+            </div> <!-- end row -->
+            <!-- === -->
+            <!-- <form action="https://formspree.io/f/mvovalyy" method="POST">
+                <input type="text" name="name">
+                <input type="email" name="_replyto">
+                <input type="submit" value="Send">
+            </form> -->
+        </div>
+    </section>
+
+    <!-- ============================ -->
 
 
-    <div class="container-fluid">
 
-        <!-- About Section -->
-        <section id="about">
+    <!-- <header class="ch-header container">
+        <h2 id="ch-header-logo">Caleb Hopkins</h2>
+        <img src="images/Computer-BG.jpg" id="computer-bg" />
+        <div id="ch-bg-overlay"></div>
+        <div id="cd-header-content">
+            <h1 id="ch-header-h1">Hey there, I'm Caleb</h1>
+            <h3 id="cd-header-h3">I'm a full-stack web developer from San Antonio, TX.</h3>
+            <p id="cd-header-text">If you have any questions, feel free to contact me by <a id="ch-header-email"
+                    href="mailto: calebhopkins@outlook.com">e-mail</a> or <a href="tel:210-823-0745">call me</a>.</p>
+        </div>
+        <div class="d-flex">
+            <a href="https://github.com/CalebTheCreative" class="mx-2" target="_blank" alt="Github icon"><i
+                    class="fab fa-github-square fa-3x skyblue"></i></a>
+            <a href="https://www.linkedin.com/in/calebthecreative/" class="mx-2" target="_blank" alt="LinkedIn icon"><i
+                    class="fab fa-linkedin fa-3x skyblue"></i></a>
+        </div>
 
-            <div class="jumbotron text-center">
+    </header> -->
 
-                <h1 class="display-4 mt-5" id="headerName1">CALEB <span id="headerName2">HOPKINS</span></h1>
+    <!-- <div class="container-fluid">
+        <hr class="my-4"> -->
 
-                <div>
-                    <p class="lead" id="headerCityPhoneEmail">SAN ANTONIO, TX &middot; 210-823-0745 &middot; <a
-                            href="mailto:calebhopkins@outlook.com">CALEBHOPKINS@OUTLOOK.COM</a> </p>
-                    <br>
-                </div>
+    <!-- Portfolio -->
 
-                <p class="lead">Hello! My name is Caleb Hopkins! Welcome to my GitHub Portfolio! I'm a full-stack <br>
-                    developer from San Antonio, TX. I love building websites, watching sports, and designing all sorts <br>
-                    of things. If you have any questions, feel free to contact me at the email or phone number listed on <br>
-                    the page!
-                </p>
-
-                <div class="lead">
-
-                    <!-- Github Link -->
-                    <span>
-                        <a href="https://github.com/CalebTheCreative" class="mx-2">
-                            <i class="fab fa-github-square fa-3x skyblue"></i>
-                        </a>
-                    </span>
-
-                    <!-- LinkedIn Link -->
-                    <span>
-                        <a href="https://www.linkedin.com/in/calebthecreative/" class="mx-2">
-                            <i class="fab fa-linkedin fa-3x skyblue"></i>
-                        </a>
-                    </span>
-                </div>
-
-            </div>
-
-        </section>
-
-        <hr class="my-4">
-
-        <!-- Portfolio -->
-
-        <section id="portfolio">
+    <!-- <section id="portfolio">
             <div class="container-fluid row">
                 <h2 class="text-center sectionTitle" id="portfolioTitle">
                     Portfolio
@@ -132,25 +238,25 @@
                 </div>
 
             </div>
-        </section>
+        </section> -->
 
-        <hr class="my-4">
+    <!-- <hr class="my-4"> -->
 
-        <!-- Experience -->
-        <section id="experience">
+    <!-- Experience -->
+    <!-- <section id="experience">
             <div>
                 <h2 class="text-center mb-4 sectionTitle" id="experienceTitle">
                     EXPERIENCE
-                </h2>
+                </h2> -->
 
-                <!-- MAKE BUTTON DOWNLOAD RESUME -->
-                <div class="text-center">
+    <!-- MAKE BUTTON DOWNLOAD RESUME -->
+    <!-- <div class="text-center">
                     <form method="get" action="images/CH-Resume.pdf">
                         <button type="submit" class="btn btn-primary">Download Resume Here!</button>
                     </form>
-                </div>
+                </div> -->
 
-                <div class="d-flex flex-sm-column flex-sm-row justify-content-between mb-4">
+    <!-- <div class="d-flex flex-sm-column flex-sm-row justify-content-between mb-4">
 
                     <div class="flex-grow-1 col-sm-8">
                         <h4><b>Travel Counselor</b></h4>
@@ -169,9 +275,9 @@
                         </span>
                     </div>
 
-                </div>
+                </div> -->
 
-                <div class="d-flex flex-sm-column flex-sm-row justify-content-between mb-4">
+    <!-- <div class="d-flex flex-sm-column flex-sm-row justify-content-between mb-4">
 
                     <div class="flex-grow-1 col-sm-8">
                         <h4><b>Coaches Video</b></h4>
@@ -188,12 +294,12 @@
                         </span>
                     </div>
 
-                </div>
+                </div> -->
 
 
-        </section>
+    <!-- </section> -->
 
-        <section id="education">
+    <!-- <section id="education">
             <div>
                 <h2 class="text-center mb-4 sectionTitle">
                     EDUCATION
@@ -211,8 +317,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </section> -->
+    <!-- </div> -->
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
