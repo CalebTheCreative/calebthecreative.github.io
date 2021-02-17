@@ -218,6 +218,17 @@ input[type=text]:focus {
     object-fit: cover;
 }
 
+.ch-resume {
+    position: relative;
+    text-align: center;
+}
+
+#resume-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 #ch-resume-bg {
     width: 100%;
     height: auto;
