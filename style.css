@@ -1,38 +1,305 @@
-.navbar {
-    min-height: 80px;
-    text-align: center;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.navbar-brand {
-    line-height: 80px;
+body {
+    height: 100%;
+    overflow-x: hidden;
 }
 
-.proj {
+span {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.ch-header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* #ch-header {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.658);
+    width: 100%;
     height: auto;
-    width: 95%;
+    color: white; 
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.548);
+} */
+
+#ch-header-logo {
+    position: absolute;
+    top: 3rem;
+    z-index: 2000;
+    width: 20%;
+    height: auto;
 }
 
-.btn-primary {
-    background-color: skyblue;
+#computer-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.8;
+} 
+
+#ch-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    background: rgba(0, 0, 0, 0.6);
 }
 
-.skyblue {
-    color: skyblue;
+#ch-header-text {
+    position: relative;
+    z-index: 10;
 }
 
-#headerName1 {
-    font-weight: bold;
+#ch-header-content {
+    font-size: 1.4rem;
+    z-index: 2;
+    margin: 0 auto;
 }
 
-#headerName2 {
-    color: skyblue;
+#ch-header-content h1 {
+    margin-bottom: 1rem;
 }
 
-#headerCityPhoneEmail {
-    color: skyblue;
+a:link {
+    text-decoration: none;
+    color: white;
 }
 
-.sectionTitle {
-    font-weight: bold;
-    color: skyblue;
+a:hover {
+    text-decoration: none;
+    color: rgb(193, 235, 255);
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-github-square, .fa-linkedin {
+    color: #00c3f0;
+}
+
+.fa-github-square:hover, .fa-linkedin:hover {
+    color: #01acd3;
+}
+
+.makeBlue-text {
+    color: #00c3f0;
+}
+
+.makeBlue-bg {
+    color: #00c3f0 !important;
+}
+
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  height: 70px;
+  margin-left: -20px;
+  top: 90%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  border-radius: 25px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(46px)
+    }
+}
+
+.ch-section {
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #00c3f0;
+    color: white;
+    width: 100vw;
+}
+
+.ch-form {
+    width: 100%;
+    height: auto;
+    color: #00c3f0;
+}
+
+.ch-form::placeholder {
+    color: #00c3f0;
+    opacity: 1;
+  }
+
+.contact-btn {
+    position: relative;
+    width: 80%;
+    height: 20%;
+    font-size: 30px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.contact-btn:hover{
+    background-color: white;
+    color: #00c3f0;
+    border-color: rgb(230, 230, 230);
+}
+
+.contact-btn:focus, .contact-btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+textarea:focus, input:focus {
+    color: #00c3f0;
+}
+
+input, select, textarea{
+    color: #00c3f0;
+}
+
+input[type=text]:focus {
+    color: #00c3f0;
+  }
+
+.submitBtn {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+}
+
+.submitBtn:hover {
+    color: #00c3f0;
+    background-color: white;
+    border-color: white;
+}
+
+.card-img-top {
+    object-fit: cover;
+}
+
+#ch-resume-bg {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query */
+
+@media(max-width:350px) {
+    #ch-header h1 {
+        font-size: 2rem;
+    }
+
+    #ch-header h2 {
+        font-size: 1.5rem;
+    }
+
+    #ch-header p {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width:360px) {
+    .card-body {
+        font-size: .75rem !important;
+    }
+
+}
+
+@media(max-width:412px) {
+    body {
+        font-size: 1rem;
+        letter-spacing: 1.5px;
+    }
+
+    .card-text {
+        text-align: left;
+        height: inherit !important;
+        /* font-size: 18px; */
+    }
+}
+
+@media(max-width:468px) {
+    p.header-text {
+        line-height: 1.5rem;
+    }
+
+    #ch-header-1 {
+        font-size: 2rem;
+    }
+
+    #ch-header-2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:768px) {
+    #ch-header {
+        text-align: left;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media(max-width:780px) {
+    #ch-header-content {
+        font-size: 20px;
+        line-height: 0.8;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media(max-width:960px) {
+    #ch-header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+@media(max-width: 1010px) {
+    .card-body {
+        font-size: 1rem;
+    }
 }
