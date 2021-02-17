@@ -235,31 +235,41 @@ input[type=text]:focus {
 }
 
 /* Media Query */
+@media only screen and (max-width:350) {
+    #ch-header-logo {
+        width: 45%;
+    }
+}
 
-@media(max-width:350px) {
-    #ch-header h1 {
-        font-size: 2rem;
+
+@media(max-width:380px) {
+    
+    #ch-header-logo {
+        width: 45%;
     }
 
-    #ch-header h2 {
+    #ch-header-1 {
+        font-size: 8px;
+    }
+
+    #ch-header-2 {
         font-size: 1.5rem;
     }
 
-    #ch-header p {
+    #header-text {
         font-size: 1rem;
     }
 }
 
-@media(max-width:360px) {
+/* @media(max-width:360px) {
     .card-body {
         font-size: .75rem !important;
     }
 
-}
+} */
 
 @media(max-width:412px) {
     body {
-        font-size: 1rem;
         letter-spacing: 1.5px;
     }
 
