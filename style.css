@@ -37,6 +37,7 @@ span {
 #ch-header-logo {
     position: absolute;
     top: 3rem;
+    left: 3rem;
     z-index: 2000;
     width: 20%;
     height: auto;
@@ -52,7 +53,7 @@ span {
     opacity: 0.8;
 } 
 
-#ch-bg-overlay {
+.ch-bg-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -62,18 +63,18 @@ span {
     background: rgba(0, 0, 0, 0.6);
 }
 
-#ch-header-text {
+.header-text {
     position: relative;
     z-index: 10;
 }
 
-#ch-header-content {
+.ch-header-content {
     font-size: 1.4rem;
     z-index: 2;
     margin: 0 auto;
 }
 
-#ch-header-content h1 {
+.ch-header-content h1 {
     margin-bottom: 1rem;
 }
 
@@ -235,7 +236,7 @@ input[type=text]:focus {
 }
 
 /* Media Query */
-@media only screen and (max-width:350) {
+/* @media only screen and (max-width:350) {
     #ch-header-logo {
         width: 45%;
     }
@@ -258,8 +259,8 @@ input[type=text]:focus {
 
     #header-text {
         font-size: 1rem;
-    }
-}
+    /* }
+} */
 
 /* @media(max-width:360px) {
     .card-body {
@@ -268,7 +269,7 @@ input[type=text]:focus {
 
 } */
 
-@media(max-width:412px) {
+/* @media(max-width:412px) {
     body {
         letter-spacing: 1.5px;
     }
@@ -276,7 +277,6 @@ input[type=text]:focus {
     .card-text {
         text-align: left;
         height: inherit !important;
-        /* font-size: 18px; */
     }
 }
 
@@ -294,11 +294,11 @@ input[type=text]:focus {
     }
 
     #ch-header-logo {
-        width: 45%;
+    width: 45%;
     }
-}
+} */
 
-@media(max-width:768px) {
+/* @media(max-width:768px) {
     #ch-header {
         text-align: left;
     }
@@ -327,4 +327,211 @@ input[type=text]:focus {
     .card-body {
         font-size: 1rem;
     }
+} */
+
+/* ============================================== */
+/* ============================================== */
+
+@media(max-width:350px) {
+    .ch-header h1 {
+        font-size: 4rem;
+    }
+
+    .ch-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .ch-header p {
+        font-size: 1rem;
+    }
+
+    .ch-about h2 {
+        font-size: 1.5rem;
+    }
+
+    .ch-about p {
+        font-size: 1rem;
+    }
+
+    .ch-about-text {
+        padding: 0 !important;
+    }
+
+    .ch-counter div {
+        padding: 5px !important;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:360px) {
+
+    .card-body {
+        font-size: .75rem !important;
+    }
+
+    .ch-contact i {
+        font-size: 3em;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:365px) {
+    button.resume-click-control {
+        font-size: 1rem;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:415px) {
+    body {
+        font-size: 2rem;
+        letter-spacing: 1.5px;
+    }
+
+    #ch-header-1 {
+        font-size: 3rem !important;
+    }
+
+    .card-text {
+        text-align: left;
+        height: inherit !important;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+    
+    .ch-header-content {
+        font-size: 3rem;
+        line-height: 0.8;
+        letter-spacing: 1.5px;
+    }
+    
+}
+
+@media(max-width:468px) {
+    .ch-logo-list i {
+        font-size: 3em;
+    }
+
+    p.header-text {
+        line-height: 1.5rem;
+    }
+
+    #ch-header-1 {
+        font-size: 2rem;
+    }
+
+    #ch-header-2 {
+        font-size: 1.5rem;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width: 576px) {
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:768px) {
+    .ch-header {
+        text-align: left;
+    }
+
+    .card {
+        margin: 0 auto;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:780px) {
+    .ch-porfolio-holder {
+        height: 382px !important;
+    }
+
+    .ch-header-content {
+        font-size: 3rem;
+        line-height: 0.8;
+        letter-spacing: 1.5px;
+    }
+
+    .btn-dark {
+        margin-top: 20px;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:960px) {
+    .ch-header {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width: 1010px) {
+    .card-body {
+        font-size: 3rem;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+@media(max-width:1000px) {
+
+    #return-to-top {
+        display: none !important;
+    }
+
+    #ch-header-logo {
+        width: 40%;
+    }
+}
+
+/* Scroll up animation */
+
+#scroll-to-top {
+    z-index: 999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
