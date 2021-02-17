@@ -1,0 +1,22 @@
+{
+  "name": "calebthecreative",
+  "version": "2.0.0",
+  "description": "## Description",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CalebTheCreative/CalebTheCreative.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CalebTheCreative/CalebTheCreative/issues"
+  },
+  "homepage": "https://github.com/CalebTheCreative/CalebTheCreative#readme",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
+}
