@@ -24,7 +24,7 @@
                     <div class='icon-scroll'></div>
                     <!-- <p id="ls-icon-animated" class="fa"></p> -->
                 </div>
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center" id="ch-header-icons">
                     <!-- Github Icon -->
                     <a href="https://github.com/CalebTheCreative" class="mx-2" target="_blank" alt="Github icon"><i
                             class="fab fa-github-square fa-3x skyblue"></i></a>
@@ -40,7 +40,7 @@
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h1 class="mb-4">FEATURED PROJECTS</h1>
+                    <h1 class="mb-4 ch-section-title">FEATURED PROJECTS</h1>
                 </div>
             </div>
             <div class="row justify-content-center text-center">
@@ -51,11 +51,11 @@
                         <h3 class="card-title text-dark">Stay In App</h3>
                         <div>
                             <a href="https://stayingin.herokuapp.com/" class="mx-2" target="_blank" alt="Github icon">
-                                <button class="btn-primary btn">Live Demo</button>
+                                <button class="btn-primary btn ch-proj-btn"><i class="fas fa-play-circle"></i> Live</button>
                             </a>
                             <a href="https://github.com/CalebTheCreative/Project-2" class="mx-2" target="_blank"
-                                alt="LinkedIn icon">
-                                <button class="btn-primary btn">Github Repo</button>
+                                alt="Github icon">
+                                <button class="btn-primary btn ch-proj-btn"><i class="fab fa-github"></i> Repo</button>
                             </a>
                         </div>
                     </div>
@@ -68,11 +68,11 @@
                         <div>
                             <a href="https://calebthecreative.github.io/WeatherApp/" class="mx-2" target="_blank"
                                 alt="Github icon">
-                                <button class="btn-primary btn">Live Demo</button>
+                                <button class="btn-primary btn ch-proj-btn"><i class="fas fa-play-circle"></i> Live</button>
                             </a>
                             <a href="https://github.com/CalebTheCreative/WeatherApp" class="mx-2" target="_blank"
                                 alt="LinkedIn icon">
-                                <button class="btn-primary btn">Github Repo</button>
+                                <button class="btn-primary btn ch-proj-btn"><i class="fab fa-github"></i> Repo</button>
                             </a>
                         </div>
                     </div>
@@ -85,11 +85,11 @@
                         <div>
                             <a href="https://calebthecreative.github.io/Code-Quiz/" class="mx-2" target="_blank"
                                 alt="Github icon">
-                                <button class="btn-primary btn">Live Demo</button>
+                                <button class="btn-primary btn ch-proj-btn"><i class="fas fa-play-circle"></i> Live</button>
                             </a>
                             <a href="https://github.com/CalebTheCreative/Code-Quiz" class="mx-2" target="_blank"
                                 alt="LinkedIn icon">
-                                <button class="btn-primary btn">Github Repo</button>
+                                <button class="btn-primary btn ch-proj-btn"><i class="fab fa-github"></i> Repo</button>
                             </a>
                         </div>
                     </div>
@@ -102,7 +102,7 @@
     <section class="ch-resume">
         <img id="ch-resume-bg" src="images/background/ch-resume-bg.png" />
         <div id="resume-content">
-            <h1 class="mb-2 text-center text-light">RESUME</h1>
+            <h1 class="mb-2 text-center text-light ch-section-title">RESUME</h1>
             <div class="text-center">
                 <form method="get" action="docs/CH-Resume.pdf" target="_blank">
                     <button type="submit" class="btn submitBtn">Download Resume Here!</button>
@@ -117,25 +117,25 @@
         <div class="container-fluid">
             <div class="row justify-content-center text-center">
                 <div class="col-12">
-                    <h1 class="mb-4">CONTACT ME</h1>
+                    <h1 class="mb-4 ch-section-title">CONTACT ME</h1>
                 </div>
             </div>
             <div class="row justify-content-center text-center">
 
                 <div class="col-12 col-xl-4 mx-3" id="formCol">
-                    <h3 class="text-center">SEND ME A MESSAGE</h3>
+                    <h3 class="text-center form-msg">SEND ME A MESSAGE</h3>
                     <!-- Contact Form -->
                     <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8"
                         action="https://formspree.io/f/mvovalyy" method="post">
 
                         <fieldset id="fs-frm-inputs">
-                            <input class="ch-form form-control h-75 my-2" type="text" name="name" id="full-name"
+                            <input class="ch-form form-control h-75 my-2 fullNameBox" type="text" name="name" id="full-name"
                                 placeholder="Full Name" required="">
-                            <input class="ch-form form-control h-75 my-2" type="email" name="_replyto"
+                            <input class="ch-form form-control h-75 my-2 emailBox" type="email" name="_replyto"
                                 id="email-address" placeholder="Email Address" required="">
-                            <textarea class="ch-form form-control h-75 my-2" rows="5" name="message" id="message"
+                            <textarea class="ch-form form-control h-75 my-2 msgBox" rows="5" name="message" id="message"
                                 placeholder="Your Message" required=""></textarea>
-                            <input class="ch-form form-control h-75 my-2" type="hidden" name="_subject"
+                            <input class="ch-form form-control h-75 mt-2" type="hidden" name="_subject"
                                 id="email-subject" value="Contact Form Submission">
                         </fieldset>
                         <input type="submit" class="btn btn-lg submitBtn" value="Submit">
@@ -146,15 +146,15 @@
 
                 <div class="col-12 col-xl-4 mx-3" id="linksCol">
                     <a href="tel:+12108230745">
-                        <button class="btn btn-lg contact-btn justify-content-center align-items-center mt-5 mb-4">
+                        <button class="btn btn-lg contact-btn justify-content-center align-items-center mt-5 mb-4 callBtn">
                             <i class="fas fa-phone text-left shadow-none"></i>
-                            +1 2108230745
+                             +1 2108230745
                         </button>
                     </a><br />
                     <a href="mailto: calebhopkins@outlook.com">
-                        <button class="btn btn-lg contact-btn align-items-center">
+                        <button class="btn btn-lg contact-btn align-items-center emailBtn">
                             <i class="fas fa-envelope text-left shadow-none"></i>
-                            calebhopkins@outlook.com
+                             calebhopkins@outlook.com
                         </button>
                     </a>
                 </div><!-- end #linksCol -->

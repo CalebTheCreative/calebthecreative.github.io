@@ -332,7 +332,7 @@ input[type=text]:focus {
 /* ============================================== */
 /* ============================================== */
 
-@media(max-width:350px) {
+/* @media(max-width:350px) {
     .ch-header h1 {
         font-size: 4rem;
     }
@@ -364,9 +364,9 @@ input[type=text]:focus {
     #ch-header-logo {
         width: 40%;
     }
-}
+} */
 
-@media(max-width:360px) {
+/* @media(max-width:360px) {
 
     .card-body {
         font-size: .75rem !important;
@@ -379,9 +379,9 @@ input[type=text]:focus {
     #ch-header-logo {
         width: 40%;
     }
-}
+} */
 
-@media(max-width:365px) {
+/* @media(max-width:365px) {
     button.resume-click-control {
         font-size: 1rem;
     }
@@ -416,9 +416,9 @@ input[type=text]:focus {
         letter-spacing: 1.5px;
     }
     
-}
+} */
 
-@media(max-width:468px) {
+/* @media(max-width:468px) {
     .ch-logo-list i {
         font-size: 3em;
     }
@@ -438,9 +438,9 @@ input[type=text]:focus {
     #ch-header-logo {
         width: 40%;
     }
-}
+} */
 
-@media(max-width: 576px) {
+/* @media(max-width: 576px) {
 
     #ch-header-logo {
         width: 40%;
@@ -459,9 +459,9 @@ input[type=text]:focus {
     #ch-header-logo {
         width: 40%;
     }
-}
+} */
 
-@media(max-width:780px) {
+/* @media(max-width:780px) {
     .ch-porfolio-holder {
         height: 382px !important;
     }
@@ -496,9 +496,9 @@ input[type=text]:focus {
         line-height: 0.8;
         letter-spacing: 1.5px;
     }
-}
+} */
 
-@media(max-width: 1010px) {
+/* @media(max-width: 1010px) {
     .card-body {
         font-size: 3rem;
     }
@@ -506,7 +506,7 @@ input[type=text]:focus {
     #ch-header-logo {
         width: 40%;
     }
-}
+}*/
 
 @media(max-width:1000px) {
 
@@ -515,9 +515,79 @@ input[type=text]:focus {
     }
 
     #ch-header-logo {
-        width: 40%;
+        width: 35rem;
+    }
+
+    #ch-header-1{
+        font-size:6rem;
+    }
+
+    #ch-header-2{
+        font-size:4.1rem;
+    }
+
+    #ch-header-icons{
+        font-size: 3.1rem;
+        margin-top: 2.2rem;
+    }
+
+    .ch-section-title {
+        font-size: 5rem;
+    }
+
+    .card-title{
+        font-size: 4rem;
+    }
+
+    .ch-proj-btn{
+        font-size: 3rem;
+    }
+
+    .submitBtn {
+        width: 30rem;
+        font-size: 2rem;
+    }
+
+    .form-msg{
+        font-size: 3rem;
+    }
+
+    .fullNameBox{
+        font-size: 4rem;;
+    }
+
+    .emailBox {
+        font-size: 4rem;
+    }
+
+    .msgBox {
+        font-size: 4rem;
+    }
+
+    .submitBtn {
+        margin-top: 1rem;
+        font-size: 3.5rem;
+        width: 50rem;
+    }
+
+    .callBtn {
+        font-size: 4rem;
+        width: 50rem;
+        height: auto;
+    }
+
+    .emailBtn {
+        margin-top: 1rem;;
+        font-size: 3rem;
+        width: 50rem;
+        height: auto;
+    }
+
+    .fa-envelope {
+        font-size: 4rem;
     }
 }
+
 
 /* Scroll up animation */
 
