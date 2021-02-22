@@ -4,6 +4,8 @@
     margin: 0;
 }
 
+html * { -webkit-text-size-adjust: none; }
+
 body {
     height: 100%;
     overflow-x: hidden;
