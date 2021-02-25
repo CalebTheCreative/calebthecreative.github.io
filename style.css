@@ -237,6 +237,16 @@ input[type=text]:focus {
     height: auto;
 }
 
+.ch-proj-btn{
+    background-color: #00c3f0;
+    color: white;
+}
+
+.ch-proj-btn:hover, .ch-proj-btn:active{
+    background-color: #01b5dd;
+    color: white;
+}
+
 /* Media Query */
 /* @media only screen and (max-width:350) {
     #ch-header-logo {
